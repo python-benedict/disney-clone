@@ -1,10 +1,17 @@
 import './App.css';
 import Login from './components/Login';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <h2>Hello welcome to lindin clone</h2>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Login />}>
+            
+          </Route>
+        </Routes>
+      </Router>
     </div>
   );
 }
