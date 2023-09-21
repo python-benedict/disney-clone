@@ -6,7 +6,9 @@ const Header = (props) => {
   return (
     <Container>
         <Content>
-            Header
+            <Logo>
+                <a href="/home"> <img src="/images/home-logo.svg"/> </a>
+            </Logo>
         </Content>
     </Container>
   )
@@ -22,6 +24,17 @@ const Container = styled.div`
     width: 100vw;
     z-index: 100;
 `;
-const Content = styled.div``;
+const Content = styled.div`
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    min-height: 100%;
+    max-width: 1128px;
+`;
+
+const Logo = styled.span`
+    margin-right: 8px;
+    font-size: 0px;
+`
 
 export default Header
